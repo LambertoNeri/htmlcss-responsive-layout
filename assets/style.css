@@ -14,6 +14,14 @@ body{
 color: white;
 }
 
+.blue-text{
+    color: #0084FD;
+}
+
+.grey-text{
+    color:#6E869B
+}
+
 .black-text{
     color: black;
 }
@@ -29,11 +37,30 @@ color: white;
     background-color: white;
 }
 
+.blue-button{
+    background-color: #0084FD;
+}
+
 .align{
     display: flex;
     align-items: center;
 }
 
+ul{
+    list-style-type: none;
+}
+
+.font-size-bigger{
+    font-size: 1.3rem;
+}
+
+.giga-font{
+    font-size: 5rem;
+}
+
+.bold{
+    font-weight: 900;
+}
 
 
 
@@ -65,7 +92,6 @@ header .container{
 header ul{
     display: flex;
     flex-direction: row;
-    list-style-type: none;
     height: 100%;
     gap: 1rem;
 }
@@ -103,4 +129,138 @@ header ul li a{
         margin-inline: 2rem;
     }
 }
+                                               /*main*/
 
+.first-container{                          
+    display: flex;
+    max-width: 1140px;
+    margin-inline: auto;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.first-container .card{
+    background-color: #B5DDFF;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    display: flex;
+}
+
+.first-container .big-card{
+    flex: 0 0 calc((100% / 3 ) * 2 - 0.6rem);
+    flex-wrap: wrap;
+}
+
+.big-card div{
+    display: flex;
+    align-items: center;
+}
+
+.small-card{
+    flex: 0 0 calc(100% / 3 - 1rem);
+    text-align: center;
+}
+
+.demo-application{
+    display: flex;
+    justify-content: center;
+    flex: 0 0 50%;
+}
+
+
+.demo-application ul{
+    padding-bottom: 4rem;
+}
+
+.demo-application ul li{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+}
+
+
+.phone{
+    display: flex;
+    height: 100%;
+    flex: 0 0 50%;
+    justify-content: center;
+    align-items: end;
+}
+
+.phone img{
+    width: 250px;
+    align-self: end;
+}
+
+.phone-button a{
+    text-decoration: none;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.2rem;
+    padding-inline: 3rem;
+}
+
+.small-card li{
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+.small-card ul{
+    margin-inline: 2rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width:778px){
+    .first-container .card{
+        flex-wrap: wrap;
+    }
+
+    .demo-application{
+    flex: 1 1 100%;
+    }
+
+    .phone{
+    flex: 1 1 100%;
+    align-items: start;
+    justify-content: start;
+    }
+
+    .phone img{
+    width: 55%;
+    height: auto;
+    align-self: start;
+    }
+
+    .first-container .big-card{
+    flex: 0 0 calc((96% / 3 ) * 2);
+    }
+
+    .first-container{
+    justify-content: space-around;
+    }
+
+}
+
+@media (max-width:480px){
+    .first-container .big-card{
+        flex: 0 0 100%;
+    }
+
+    .small-card{
+        flex: 0 0 100%
+    }
+
+    .demo-application{
+        flex: 1 1 100%;
+        }
+
+    .phone{
+        justify-content: center;
+        }
+    
+    .demo-application ul{
+            padding-bottom: 4rem;
+            text-align: center;
+     }
+}
