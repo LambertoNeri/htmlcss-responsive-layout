@@ -131,7 +131,7 @@ header ul li a{
 }
                                                /*main*/
 
-.first-container{                          
+.first-container{                           /* 1st container */                
     display: flex;
     max-width: 1140px;
     margin-inline: auto;
@@ -142,7 +142,7 @@ header ul li a{
 
 .first-container .card{
     background-color: #B5DDFF;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     border-radius: 1.5rem;
     display: flex;
 }
@@ -271,4 +271,20 @@ header ul li a{
     .demo-application{
         margin-inline: 2rem;
     }
+}
+
+
+.second-container {        /* Second Container */
+    margin-top: 4rem;
+    padding-top: 4rem;
+    background-color: #9792E4;
+    height: 600px;
+}
+
+.mid-box{
+    background-color: yellow;
+    max-width: 800px;
+    margin-inline: auto;
+    height: 400px;
+    margin-top: 1rem;
 }
