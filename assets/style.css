@@ -90,3 +90,17 @@ header ul li a{
     font-size: 2rem;
 }
 
+@media (max-width: 768px){
+    .container .list{
+        display: none;
+    }
+
+    .hambu{
+        display: flex;
+    }
+
+    header .container{
+        margin-inline: 2rem;
+    }
+}
+
