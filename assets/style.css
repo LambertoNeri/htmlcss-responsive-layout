@@ -263,4 +263,12 @@ header ul li a{
             padding-bottom: 4rem;
             text-align: center;
      }
+
+    .first-container{
+        margin-inline: 1rem;
+    }
+
+    .demo-application{
+        margin-inline: 2rem;
+    }
 }
