@@ -507,6 +507,11 @@ header ul li a{
 .third-container .mid-box:last-child{
     padding-bottom: 6rem;
 }
+
+.bubba{
+    text-align: center;
+}
+
 @media (max-width:1130px){
     .third-container .mid-box{
         padding-inline: 2rem;
