@@ -58,12 +58,45 @@ ul{
     font-size: 5rem;
 }
 
+.font-size-little{
+    font-size: 0.8rem;
+}
+
 .bold{
     font-weight: 900;
 }
 
+.thin{
+    font-weight: 300;
+}
 
+.line-height-bigger{
+    line-height: 1.5rem;
+}
 
+.italic{
+    font-style: italic;
+}
+
+.font-smaller{
+    font-size: 0.9rem;
+}
+
+.font-bigger{
+    font-size: 1.1rem;
+}
+
+.gap-down{
+    padding-bottom: 2rem;
+}
+
+.weight-mid{
+    font-weight: 550;
+}
+
+.margin-top{
+    margin-top: 2rem;
+}
 
 header{                                                    /*header*/
     height: 4.75rem;
@@ -278,13 +311,175 @@ header ul li a{
     margin-top: 4rem;
     padding-top: 4rem;
     background-color: #9792E4;
-    height: 600px;
 }
 
-.mid-box{
-    background-color: yellow;
-    max-width: 800px;
+.second-container .mid-box{
     margin-inline: auto;
-    height: 400px;
+    width: 900px;
     margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
 }
+
+.mid-box-left{
+    flex: 0 0 50%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second-container .mid-box img{
+    width: 90%;
+}
+
+.mid-box-left li{
+    color: white;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid-box-left ul{
+    margin-top: 3rem;
+}
+
+.mid-box-right{
+    flex: 0 0 50%;
+    display: flex;
+    align-items: end;
+}
+
+.mid-box-right img{
+    margin-top: 2rem;
+    width: 70%;
+}
+
+.pillolone{
+    background-color: white;
+    flex: 0 0 80%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pillolone .center{
+   text-align: center;
+   margin-top: 2rem;
+   margin-inline: 2rem;
+}
+
+.pillolone a{
+   background-color: #e49e92;
+   border-radius: 50px;
+   padding-inline: 14px;
+   padding-top: 9px;
+   padding-bottom: 9px;
+}
+
+@media (max-width:778px){
+    .second-container .mid-box{
+        width: 100%;
+    }
+
+    .mid-box-left{
+        flex: 1 1 100%;
+        margin-inline: 1rem;
+    }
+
+    .mid-box-left h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .mid-box-right{
+        margin-top: 3rem;
+        flex: 1 1 100%;
+        margin-inline: 1rem;
+    }
+
+    .pillolone{
+        flex: 1 1 100%;
+    }
+
+    .pillolone img{
+        width: 60%;
+    }
+
+    .pillolone li{
+        margin-inline: 5rem;
+    }
+}
+
+@media (max-width:480px){
+    .mid-box-left img{
+        width: 60%;
+    }
+}
+
+
+.third-container{             /* 3rd container */  
+    margin-top: 4rem;
+}
+
+.third-container .mid-box{
+    display: flex;
+    max-width: 1140px;
+    margin-inline: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titolone{
+    font-size: 3rem;
+    color: #9792E4;
+}
+
+.fuori-card{
+    word-spacing: 0.2rem;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.third-container .card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    background-color: #9792E4;
+    border-radius: 40px;
+}
+
+.third-container .card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    object-fit: cover;
+    margin-top: 2rem;
+    margin-inline: 1.5rem;
+}
+
+.card .testimonial-text{
+    padding-top: 4rem;
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.card span{
+    padding-top: 2rem;
+    display: inline-block;
+    padding-bottom: 5rem;
+}
+
+.mid-box:last-child{
+    padding-bottom: 4rem;
+}
+
+
+@media (max-width:778px){
+    
+}
+
+
+
