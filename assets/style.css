@@ -444,6 +444,10 @@ header ul li a{
     .mid-box-left img{
         width: 60%;
     }
+
+    .pillolone .center{
+        margin-inline: 0;
+    }
 }
 
 
