@@ -477,9 +477,24 @@ header ul li a{
 }
 
 
-@media (max-width:778px){
-    
+@media (max-width:480px){
+    .third-container .card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .third-container .card p{
+        text-align: center;
+    }
+
+    .third-container .card span{
+        text-align: center;
+        margin-inline: auto;
+        width: 100%;
+    }
 }
 
+
+.fourth-section
 
 
