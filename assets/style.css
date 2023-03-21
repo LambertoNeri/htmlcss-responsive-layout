@@ -82,6 +82,10 @@ ul{
     font-size: 0.9rem;
 }
 
+.font-smallerr{
+    font-size: 0.8rem;
+}
+
 .font-bigger{
     font-size: 1.1rem;
 }
@@ -499,7 +503,11 @@ header ul li a{
 .third-container .mid-box:last-child{
     padding-bottom: 6rem;
 }
-
+@media (max-width:1130px){
+    .third-container .mid-box{
+        padding-inline: 2rem;
+    }
+}
 
 @media (max-width:480px){
     .third-container .card{
@@ -605,14 +613,15 @@ header ul li a{
     max-width: 1140px;
     margin-inline: auto;
     padding-bottom: 6rem;
+    padding-inline: 2rem;
 }
 
 .fifth-container .left-section{
-    flex: 0 0 70%;
+    flex: 1 1 70%;
 }
 
 .fifth-container .right-section{
-    flex: 0 0 30%;
+    flex: 1 1 30%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -644,4 +653,86 @@ header ul li a{
     text-decoration: none;
     align-self: flex-start;
     margin-left: 2rem;
+}
+
+@media (max-width: 536px){
+    .fifth-container{
+        flex-wrap: wrap;
+    }
+}
+
+
+.sixth-container{                 /*sixth container */
+background-color: #9792E4;
+padding-top: 6rem;
+padding-bottom: 6rem;
+}
+
+.sixth-container .mid-box{
+    height: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sixth-container .mid-box h2{
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+    font-size: 1.2rem;
+    opacity: 50%;
+}
+
+.sixth-container .titolino{
+    color: white;
+    font-size: 2rem;
+}
+
+.titolone-giga{
+    font-size: 5rem;
+    color: #FDC15F;
+}
+
+.sixth-container p{
+    text-align: center;
+    margin-inline: 6rem;
+}
+
+.sixth-container .button{
+    color: #9792E4;
+    text-decoration: none;
+    background-color: white;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-inline: 3.4rem;
+    border-radius: 40px;
+   letter-spacing: 0.2rem;
+}
+
+
+footer{                                          /*FOOTER*/
+    background-color: #333333;
+    height: 300px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer div{
+    height: 100%;
+    width: 300px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer span{
+    font-size: 0.8rem;
+    text-align: center;
+}
+footer a{
+    color: #9792E4;
+    display: inline-block;
+    font-size: 0.8rem;
 }
