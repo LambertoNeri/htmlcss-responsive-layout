@@ -115,7 +115,11 @@ ul{
 }
 
 .line-height-giga{
-    line-height: 2rem;
+    line-height: 3rem;
+}
+
+.margin-top-giga{
+    margin-top: 4rem;
 }
 
 header{                                                    /*header*/
@@ -600,6 +604,7 @@ header ul li a{
     margin-top: 4rem;
     max-width: 1140px;
     margin-inline: auto;
+    padding-bottom: 6rem;
 }
 
 .fifth-container .left-section{
@@ -632,4 +637,11 @@ header ul li a{
     right: 3.5rem;
     color: #9792E4;
     font-size: 5rem;
+}
+
+.right-section a{
+    background-color: #9792E4;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-left: 2rem;
 }
